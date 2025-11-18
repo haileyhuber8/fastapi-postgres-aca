@@ -41,4 +41,6 @@ resource "azurerm_key_vault_secret" "secrets" {
   name         = var.secrets[count.index].name
   value        = var.secrets[count.index].value
   key_vault_id = azurerm_key_vault.kv.id
+
+  depends_on = [azurerm_key_vault_access_policy.github_actions]
 }
