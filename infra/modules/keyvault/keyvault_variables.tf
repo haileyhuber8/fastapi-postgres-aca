@@ -27,3 +27,9 @@ variable "secrets" {
   }))
   sensitive = true
 }
+
+variable "github_actions_principal_id" {
+  description = "Object ID of the GitHub Actions service principal for OIDC authentication"
+  type        = string
+  default     = null
+}
