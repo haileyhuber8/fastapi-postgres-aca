@@ -60,10 +60,4 @@ variable "max_replicas" {
   default     = 3
 }
 
-variable "github_actions_principal_id" {
-  description = "Object ID of the GitHub Actions service principal for Key Vault access"
-  type        = string
-  default     = null
-}
-
 

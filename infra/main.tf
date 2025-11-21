@@ -46,12 +46,11 @@ module "postgres" {
 # Deploy key vault
 # ------------------------------------------------------------------------------------------------------
 module "keyvault" {
-  source                      = "./modules/keyvault"
-  prefix                      = var.prefix
-  location                    = var.location
-  tags                        = local.tags
-  rg_name                     = azurerm_resource_group.rg.name
-  github_actions_principal_id = var.github_actions_principal_id
+  source   = "./modules/keyvault"
+  prefix   = var.prefix
+  location = var.location
+  tags     = local.tags
+  rg_name  = azurerm_resource_group.rg.name
   secrets = [
     {
       name  = local.postgres_connection_string_key
