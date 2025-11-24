@@ -88,8 +88,6 @@ Once complete, you'll see the provisioned resources and the application URL:
 
 ### Local Development
 
-#### Option 1: Docker Compose (Recommended)
-
 ```bash
 # Navigate to source directory
 cd src
@@ -99,23 +97,6 @@ docker-compose up
 
 # Application runs at http://localhost:8000
 # API documentation at http://localhost:8000/docs
-```
-
-#### Option 2: Python Virtual Environment
-
-```bash
-# Navigate to source directory
-cd src
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application (requires PostgreSQL running locally)
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ## API Documentation
