@@ -91,6 +91,9 @@ Once complete, you'll see the provisioned resources and the application URL:
 #### Option 1: Docker Compose (Recommended)
 
 ```bash
+# Navigate to source directory
+cd src
+
 # Start application with PostgreSQL database
 docker-compose up
 
