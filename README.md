@@ -54,7 +54,7 @@ infra/
 - [Python 3.11+](https://www.python.org/downloads/)
 - [Terraform CLI](https://aka.ms/azure-dev/terraform-install) (v1.5.0+)
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli)
-- [Docker](https://docs.docker.com/get-docker/) (optional, for local development)
+- [Docker](https://docs.docker.com/get-docker/)
 
 ## Quick Start
 
